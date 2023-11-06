@@ -1,0 +1,33 @@
+﻿<Window x:Class="ClientChat.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientChat"
+        xmlns:dc="clr-namespace:ClientChat.ViewModel"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="200" Width="450" ResizeMode="NoResize" Icon="/Images/icon.ico">
+    <Window.DataContext>
+        <dc:RegistrationVM/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Content="Логин:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <Label Grid.Row="1" Content="Пароль:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="5" Text="{Binding RegLogin}" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="RegPassword" Grid.Row="1" Grid.Column="1" Margin="5" VerticalContentAlignment ="Center"/>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="ОК" Width="100" Margin="5,10" Command="{Binding RegistrUserCD}" Style="{DynamicResource ButtonSt}"/>
+            <Button Content="Отмена" Width="100" Margin="5,10" IsCancel="True" Style="{DynamicResource ButtonSt}"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

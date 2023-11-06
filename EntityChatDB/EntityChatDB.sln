@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityChatDB", "EntityChatDB.csproj", "{1937DA95-7D53-4A6E-814E-63A3BB22FB0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1937DA95-7D53-4A6E-814E-63A3BB22FB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1937DA95-7D53-4A6E-814E-63A3BB22FB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1937DA95-7D53-4A6E-814E-63A3BB22FB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1937DA95-7D53-4A6E-814E-63A3BB22FB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A73F9CE-8CBA-481D-9718-1FA7ECD989B6}
+	EndGlobalSection
+EndGlobal
